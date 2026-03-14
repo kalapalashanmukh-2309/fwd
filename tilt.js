@@ -1,7 +1,3 @@
-/**
- * tilt.js - 3D Tilt Effect for Gallery Images
- * Applies 3D perspective tilt based on mouse position
- */
 
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.gallery img');
@@ -9,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     images.forEach(img => {
         const container = img.parentElement;
 
-        // Add perspective container class
+   
         container.style.perspective = '1000px';
 
         img.addEventListener('mousemove', (e) => {
@@ -32,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             img.style.transition = 'transform 0.6s ease';
         });
 
-        // Set initial transform style
+       
         img.style.transformStyle = 'preserve-3d';
         img.style.transition = 'transform 0.6s ease';
     });
