@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exhibitions</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background:
+                linear-gradient(rgba(255, 230, 240, 0.6), rgba(240, 240, 255, 0.6)),
+                url('inmon.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        nav {
+            text-align: center;
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6a3d6d;
+            margin: 0 18px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff5fa2;
+        }
+
+        .container {
+            width: 80%;
+            margin: 100px auto 120px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(10px);
+            border-radius: 70px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a3d6d;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .exhibition {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .exhibition img {
+            width: 260px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .details h2 {
+            margin: 0;
+            color: #6a3d6d;
+        }
+
+        .details p {
+            margin: 8px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 6px 14px;
+            margin-top: 10px;
+            background: #ffd6e8;
+            color: #6a3d6d;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #6a3d6d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artists.html">Legends</a>
+        <a href="gallery.html">Hidden Gems</a>
+        <a href="exhibition.html">TOP GROSS</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>TOP GROSS MOVIES IN TFI</h1>
+
+        <div class="exhibition">
+            <img src="fav.jpg" alt="Spring Exhibition">
+            <div class="details">
+                <h2>MAGADHEERA</h2>
+                <p><strong>Release Date:</strong> 30 July 2009</p>
+                <p><strong>Gross:</strong>₹132.65 Crore – ₹150 Crore</p>
+                <p>
+                    Magadheera (2009) was a massive critical and commercial blockbuster, becoming the first Telugu film
+                    to gross over ₹100 crore. The S.S. Rajamouli-directed film, starring Ram Charan, collected
+                    approximately ₹133–150 crore worldwide against a budget of ₹35–42 crore. It set several all-time
+                    records in its run
+                </p>
+                <span class="tag">S.S.Rajamouli</span>
+            </div>
+        </div>
+
+        <div class="exhibition">
+            <img src="Bahu.jpg" alt="Indian Heritage Art">
+            <div class="details">
+                <h2>BAHUBALI</h2>
+                <p><strong>Release Date:</strong> 28 April 2017</p>
+                <p><strong>Gross:</strong> est. ₹1,810.60 crore</p>
+                <p>
+                    Baahubali 2: The Conclusion[a] is a 2017 Indian Telugu-language epic action film directed by S. S.
+                    Rajamouli, who co-wrote the script with V. Vijayendra Prasad. It was produced by Shobu Yarlagadda
+                    and Prasad Devineni under the banner Arka Media Works. The cast includes Prabhas in a dual and
+                    titular role, alongside Rana Daggubati, Anushka Shetty, Tamannaah Bhatia, Ramya Krishna, Sathyaraj,
+                    Nassar and Subbaraju. It is both the sequel and the prequel to Baahubali: The Beginning, as well as
+                    the final installment in the Baahubali film duology
+                </p>
+                <span class="tag">S.S.Rajamouli</span>
+            </div>
+        </div>
+
+        <div class="exhibition">
+            <img src="pushpa.jpg" alt="Modern Expressions">
+            <div class="details">
+                <h2>Pushpa 2: The Rule</h2>
+                <p><strong>Release Date:</strong>5 December 2024</p>
+                <p><strong>Gross:</strong>est. ₹1,642–1,800 crore</p>
+                <p>
+                    Pushpa 2: The Rule is a 2024 Indian Telugu-language action drama film[8] written and directed by
+                    Sukumar and produced by Mythri Movie Makers in association with Sukumar Writings. A sequel to
+                    Pushpa: The Rise (2021), it is the second installment in the Pushpa film series.
+                </p>
+                <span class="tag">Sukumar</span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>© 2026 TFI BANISA</footer>
+</body>
+
+</html>

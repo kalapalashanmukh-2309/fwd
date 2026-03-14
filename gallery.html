@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            color: #333;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background:
+                linear-gradient(rgba(255, 230, 240, 0.6), rgba(240, 240, 255, 0.6)),
+                url('movies.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        nav {
+            text-align: center;
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6a3d6d;
+            margin: 0 18px;
+            font-weight: 500;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff5fa2;
+        }
+
+        .container {
+            width: 85%;
+            margin: 100px auto 120px;
+            padding: 40px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h1 {
+            font-size: 40px;
+            color: #6a3d6d;
+            margin-bottom: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .art-box {
+            text-align: center;
+        }
+
+        .art-box a {
+            text-decoration: none;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 14px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .art-box p {
+            margin-top: 8px;
+            font-size: 15px;
+            color: #6a3d6d;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: #6a3d6d;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="artists.html">Legends</a>
+        <a href="gallery.html">Hidden Gems</a>
+        <a href="exhibition.html">TOP GROSS</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>TFI Hidden Gems</h1>
+
+        <div class="gallery">
+
+            <div class="art-box">
+                <a href="https://www.youtube.com/watch?v=l9FTCR_A6D0" target="_blank">
+                    <img src="leader.jpg">
+                    <p><b>LEADER</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.youtube.com/watch?v=X86vEhY3bas" target="_blank">
+                    <img src="kanche.jpg">
+                    <p><b>KANCHE</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.youtube.com/watch?v=Y966R6tsbGA" target="_blank">
+                    <img src="hellomov.jpg">
+                    <p><b>HELLO</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.youtube.com/watch?v=Z7JkBGg9LQ0" target="_blank">
+                    <img src="Sahasam.jpg">
+                    <p><b>SAHASAM</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.aha.video/movie/mental-madhilo" target="_blank">
+                    <img src="mental.jpg">
+                    <p><b>Mental Madhilo</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.youtube.com/watch?v=oLYzIvN_1zg" target="_blank">
+                    <img src="nenu.jpg">
+                    <p><b>1 NENOKKADINE</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.youtube.com/watch?v=95EUNEFvgbs" target="_blank">
+                    <img src="vedam.jpg">
+                    <p><b>VEDAM</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.youtube.com/watch?v=k_-PvLgr1c0" target="_blank">
+                    <img src="godv.jpg">
+                    <p><b>GODAVARI</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.primevideo.com/dp/amzn1.dv.gti.a0bab610-e95e-1413-4be0-50536a5e675e?autoplay=0&ref_=atv_cf_strg_wb"
+                    target="_blank">
+                    <img src="cokan.jpg">
+                    <p><b>C/o Kancharapalem</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.youtube.com/watch?v=_VgImhznlXw" target="_blank">
+                    <img src="gamyam.jpg">
+                    <p><b>GAMYAM</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.youtube.com/watch?v=mSxNEzZLnOw" target="_blank">
+                    <img src="andala.jpg">
+                    <p><b>ANDALA RAKSHASI</b></p>
+                </a>
+            </div>
+
+            <div class="art-box">
+                <a href="https://www.primevideo.com/dp/amzn1.dv.gti.74c6a7ff-0769-41b3-b3bb-1af1a0f53c18?autoplay=0&ref_=atv_cf_strg_wb"
+                    target="_blank">
+                    <img src="agnya.jpg">
+                    <p><b>AGNYATHAVAASI</b></p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>© 2026 TFI BANISA</footer>
+
+    <script src="JS/tilt.js"></script>
+</body>
+
+</html>
